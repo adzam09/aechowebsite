@@ -1,108 +1,22 @@
+// js for the nav bar
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".nav-links li");
 
-var loader = document.getElementById("pre-loader");
-window.addEventListener("load", function () {
-  loader.style.display = "none";
-});
-
-
-const navbar = document.querySelector('.navbar');
-const whiteBar = document.querySelector('.white-bar');
-const navLinks = document.querySelectorAll('.navbar ul li a');
-
-window.addEventListener('scroll', function() {
-  if (window.scrollY > navbar.offsetHeight) {
-    whiteBar.classList.add('active');
-    navLinks.forEach(function(link) {
-      link.style.color = 'blue';
+hamburger.addEventListener('click', ()=>{
+   //Animate Links
+    navLinks.classList.toggle("open");
+    links.forEach(link => {
+        link.classList.toggle("fade");
     });
-  } else {
-    whiteBar.classList.remove('active');
-    navLinks.forEach(function(link) {
-      link.style.color = 'white';
-    });
-  }
+
+    //Hamburger Animation
+    hamburger.classList.toggle("toggle");
 });
+// end of js for the navbar
 
+// this javas is for the home page structure
 
-
-// $('.carousel').carousel({
-//   pause: "false" /* Change to true to make it paused when your mouse cursor enter the background */
-// });
-
-// window.onscroll = function() {scrollFunction()};
-
-// function scrollFunction() {
-//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    
-//     document.getElementById("navbar").style.background = "#FFFF";
-//   } else {
-   
-//     document.getElementById("navbar").style.background = "none";
-//   }
-// }
-
-
-
-
-
-
-
-
-const slider = document.querySelector('[data-carousel]');
-const slides = [...document.querySelectorAll('.Wallop-item')]
-this.wallop = new Wallop(slider);
-
-let prev = 0
-
-const removePrevClasses = (index) => {
-	let prevClass
-	if (slides[index].classList.contains('Wallop-item--hidePrevious')) {
-		prevClass = 'Wallop-item--hidePrevious'
-	} else if (slides[index].classList.contains('Wallop-item--hideNext')) {
-		prevClass = 'Wallop-item--hideNext'
-	}
-	
-	if (prevClass) {
-		setTimeout(() => {
-		slides[index].classList.remove(prevClass)
-	}, 600)
-	}
-}
-
-const onChange = () => {
-	removePrevClasses(prev)
-	prev = this.wallop.currentItemIndex
-}
-
-this.wallop.on('change', onChange);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-let burger = document.getElementById("burger");
 let overlay = document.querySelector("section");
 let heroImage = document.querySelector(".hero-image");
 let showMenu = false;
@@ -117,24 +31,6 @@ let tl = gsap.timeline({
 
 overlay.style.display = "none";
 
-burger.addEventListener("click", (e) => {
-  showMenu = !showMenu;
-  if (showMenu) {
-    burger.classList.add("active");
-    overlay.style.display = "block";
-    gsap.to(overlay, 1, {
-      clipPath: "polygon(0% 0%, 100% 0, 100% 100%, 0% 100%)",
-      ease: "expo.in"
-    });
-  } else {
-    burger.classList.remove("active");
-    gsap.to(overlay, 1, {
-      clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
-      ease: "expo.out",
-      onComplete: () => (overlay.style.display = "none")
-    });
-  }
-});
 
 gsap.set(["#hero-1 h2, #hero-1 h1, #hero-1 h3"], {
   clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"
@@ -203,5 +99,19 @@ while (i < 5) {
   i++;
 }
 
+// end of js for the home page
 
+window.onscroll = function() {stickyNavbar()};
 
+var navbar = document.getElementsByTagName("nav")[0];
+var sticky = navbar.offsetTop;
+
+function stickyNavbar() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+// end of js for the home page
