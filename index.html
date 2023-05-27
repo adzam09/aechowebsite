@@ -2,82 +2,50 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Aecho</title>
+    <title>AECHO</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap"
-    />
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://www.dropbox.com/s/fgprlj7ggx4j1c7/logo.png?raw=1"
+    />
   </head>
   <body>
     <html>
       <head>
-        <!--for including all necessry or unnecessary links -->
+        <!--area for all the bootstrap and so all links-->
+
+        <!--this link required for the service section-->
         <link
           rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-          integrity="sha512-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-          crossorigin="anonymous"
-        />
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
-          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css"
         />
       </head>
       <body>
-        <header>
-          <div class="pageloader" id="pre-loader">
-            <div class="sk-circle">
-              <div class="sk-circle1 sk-child"></div>
-              <div class="sk-circle2 sk-child"></div>
-              <div class="sk-circle3 sk-child"></div>
-              <div class="sk-circle4 sk-child"></div>
-              <div class="sk-circle5 sk-child"></div>
-              <div class="sk-circle6 sk-child"></div>
-              <div class="sk-circle7 sk-child"></div>
-              <div class="sk-circle8 sk-child"></div>
-              <div class="sk-circle9 sk-child"></div>
-              <div class="sk-circle10 sk-child"></div>
-              <div class="sk-circle11 sk-child"></div>
-              <div class="sk-circle12 sk-child"></div>
-            </div>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <nav>
+          <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
           </div>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#service">service</a></li>
+            <li><a href="#aboutus">about us</a></li>
+            <!-- <li><a href="#blog">blog</a></li> -->
+            <li><a href="#testimonial">testimoinals</a></li>
+            <li><a href="#contactus">contact us</a></li>
+          </ul>
+        </nav>
 
-          <div class="navbar-container">
-            <nav class="navbar">
-              <div class="white-bar"></div>
-              <ul>
-                <li class="nav-link"><a href="#home">Home</a></li>
-                <li class="nav-link"><a href="#service">Service</a></li>
-                <li class="nav-link"><a href="#aboutus">About us</a></li>
-                <div class="site-branding">
-                  <!--WE HAVE TO DESIGN A NEW LOGO FOR THE PAGE UNTIL THEM -->
-                  <li class="nav-link"><a>ICON</a></li>
-                  <!-- <div class="site-logo">
-                    <span class="custom-logo-link">
-                      <img
-                        src="https://broadstrokesinc.com/aecho.ai/wp-content/uploads/2022/02/aecko-blue-sm.png"
-                        alt="logo image"
-                        class="logo"
-                      />
-                    </span>
-                  </div> -->
-                </div>
-                <li class="nav-link"><a href="#testimonial">testimonial</a></li>
-                <li class="nav-link"><a href="#blog">Blog</a></li>
-                <li class="nav-link"><a href="#contactus">Contact us</a></li>
-                <li id="burger"></li>
-              </ul>
-            </nav>
-          </div>
-        </header>
+        <!-- home section -->
 
         <main id="home">
+          <li id="burger"></li>
           <article id="hero-1" style="--i: 5">
             <div class="hero-info">
               <h2>Let AECHO</h2>
@@ -105,7 +73,7 @@
           <article id="hero-4" style="--i: 2">
             <div class="hero-info">
               <h2>Take control of your data</h2>
-              <h1></h1>
+              <h1>with AECHO</h1>
             </div>
             <div class="hero-image hi-4"></div>
           </article>
@@ -117,253 +85,170 @@
             </div>
             <div class="hero-image hi-5"></div>
           </article>
-          <section></section>
-
-          <!-- about us section -->
+          <section>
+            <div data-carousel></div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/wallop/2.4.1/js/Wallop.min.js"></script>
+            <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+          </section>
         </main>
 
-        <!--service section-->
+        <!-- end of home section  -->
+
+        <!--start of service section-->
 
         <section id="service">
-          <div class="service-container">
-            <div class="service-background">
-              <div class="hero hero--intro">
-                <div class="service-heading">
-                  AI-powered emotional data prediction
+          <div class="blur-bg">
+            <div class="service-heading">
+              AI-powered emotional data prediction
+            </div>
+            <div class="section-lead">
+              At AECHO, we're more than just a business – we're a team of
+              dedicated professionals who are passionate about what we do. Our
+              mission is to provide our customers with the best possible
+              experience, every time.
+            </div>
+            <div class="service-container">
+              <!-- service grid one -->
+              <div class="services-grid-one">
+                <div class="service service1">
+                  <i class="ti-bar-chart"></i>
+                  <h4>Our Approach</h4>
+                  <p>
+                    We analyze over 164 traits profiling live voice clues,
+                    emotions, and content in a multilayered process where it’s
+                    nearly impossible to hide or fake the details and provide
+                    reliable insights.
+                  </p>
+                  <a href="#" class="cta"
+                    >Read More <span class="ti-angle-right"></span
+                  ></a>
                 </div>
-                <section class="service-content">
-                  <div class="service-row">
-                    <div class="service-column">
-                      <div class="service-card">
-                        <div class="icon-wrapper">
-                          <i class="fas fa-hammer"></i>
-                        </div>
-                        <h3>Service Heading</h3>
-                        <p>
-                          Our professional team of experts is dedicated to
-                          providing you with the highest quality service and
-                          support.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="service-column">
-                      <div class="service-card">
-                        <div class="icon-wrapper">
-                          <i class="fas fa-brush"></i>
-                        </div>
-                        <h3>Service Heading</h3>
-                        <p>
-                          We are committed to delivering exceptional results
-                          that exceed your expectations every time.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="service-column">
-                      <div class="service-card">
-                        <div class="icon-wrapper">
-                          <i class="fas fa-wrench"></i>
-                        </div>
-                        <h3>Service Heading</h3>
-                        <p>
-                          With our cutting-edge technology and innovative
-                          solutions, we can help you achieve your goals faster
-                          and more efficiently.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="service-column">
-                      <div class="service-card">
-                        <div class="icon-wrapper">
-                          <i class="fas fa-truck-pickup"></i>
-                        </div>
-                        <h3>Service Heading</h3>
-                        <p>
-                          Our services are designed to save you time and money
-                          while ensuring maximum productivity and profitability.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="service-column">
-                      <div class="service-card">
-                        <div class="icon-wrapper">
-                          <i class="fas fa-broom"></i>
-                        </div>
-                        <h3>Service Heading</h3>
-                        <p>
-                          Whether you need a one-time project or ongoing
-                          support, we have the experience and expertise to get
-                          the job done right.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="service-column">
-                      <div class="service-card">
-                        <div class="icon-wrapper">
-                          <i class="fas fa-plug"></i>
-                        </div>
-                        <h3>Service Heading</h3>
-                        <p>
-                          We are passionate about helping our clients succeed
-                          and will work tirelessly to ensure your complete
-                          satisfaction.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </section>
+                <div class="service service2">
+                  <i class="ti-light-bulb"></i>
+                  <h4>Employee Insight</h4>
+                  <p>
+                    A simple solution to track the well-being, engagement, and
+                    motivation of employees and project participants, using
+                    voice captured from Zoom and conference calls, delivered in
+                    reports.
+                  </p>
+                  <a href="#" class="cta"
+                    >Read More <span class="ti-angle-right"></span
+                  ></a>
+                </div>
+                <div class="service service3">
+                  <i class="ti-money"></i>
+                  <h4>Performance Evaluation</h4>
+                  <p>
+                    By measuring personality traits and emotional intelligence,
+                    employers can gain insights into how well employees are
+                    performing and identify areas for improvement.
+                  </p>
+                  <a href="#" class="cta"
+                    >Read More <span class="ti-angle-right"></span
+                  ></a>
+                </div>
+              </div>
+              <!-- service grid two -->
+              <div class="services-grid-two">
+                <div class="service service3">
+                  <i class="ti-money"></i>
+                  <h4>Customer Service</h4>
+                  <p>
+                    By analyzing emotional tones and patterns, employees can
+                    tailor their responses to meet customers needs and improve
+                    customer satisfaction.
+                  </p>
+                  <a href="#" class="cta"
+                    >Read More <span class="ti-angle-right"></span
+                  ></a>
+                </div>
+                <div class="service service2">
+                  <i class="ti-light-bulb"></i>
+                  <h4>Leadership and Management</h4>
+                  <p>
+                    By assessing personality traits and emotional intelligence,
+                    employers can identify individuals who possess the necessary
+                    skills to succeed.
+                  </p>
+                  <a href="#" class="cta"
+                    >Read More <span class="ti-angle-right"></span
+                  ></a>
+                </div>
+                <div class="service service1">
+                  <i class="ti-bar-chart"></i>
+                  <h4>Recruitment and Hiring</h4>
+                  <p>
+                    helps employers identify candidates who possess the
+                    necessary personality traits and emotional intelligence to
+                    perform well in specific roles.
+                  </p>
+                  <a href="#" class="cta"
+                    >Read More <span class="ti-angle-right"></span
+                  ></a>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
+        <!--end of sevice section-->
+
+        <!--start of about us section-->
         <section id="aboutus">
-          <div class="aboutus-header"><h1>ABOUT US</h1></div>
-          <div class="aboutus">
-            <div class="aboutusrow">
-              <div class="col-xs-4-about1">
-                <div class="box">
-                  <img src="images/about1.jpg" alt="aboutus image 1" />
-                  <p>
-                    Our mission is to provide the best possible service to our
-                    customers...<a href="#">read more</a>
-                  </p>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+          <div class="aboutus-container">
+            <div class="parallax">
+              <div class="aboutus-header">ABOUT US</div>
+              <div class="aboutusrow">
+                <div class="col-xs-4-about1">
+                  <div class="box">
+                    <img
+                      src="https://drive.google.com/uc?id=1cQqo7rUlEZSFYmHXvsvUshSLkHxC8hqk"
+                      alt="about image 1"
+                    />
+                    <p>
+                      Our mission is to provide the best possible service to our
+                      customers.<a href="#">read more</a>
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div class="col-xs-4-about2">
-                <div class="box">
-                  <img src="images/about2.png" alt="aboutus image 2" />
-                  <p>
-                    Our values are based on honesty, transparency, and respect
-                    ...<a href="#">read more</a>
-                  </p>
+                <div class="col-xs-4-about2">
+                  <div class="box">
+                    <img
+                      src="https://drive.google.com/uc?id=1B-a04kS4qeWVjKUvxaeC8BhJGLHS5kgN"
+                      alt="about image 2"
+                    />
+
+                    <p>
+                      Our values are based on honesty, transparency,respect and
+                      safety .<a href="#">read more</a>
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div class="col-xs-4-about3">
-                <div class="box">
-                  <img
-                    src="images/about3.png"
-                    alt="aboutus image 3"
-                    class="image3"
-                  />
-                  <p>
-                    Our company culture emphasizes teamwork, and creativity...<a
-                      href="#"
-                      >read more</a
-                    >
-                  </p>
+                <div class="col-xs-4-about3">
+                  <div class="box">
+                    <img
+                      src="https://drive.google.com/uc?id=1eghRnt2jn9VEd69doMB9Bd2BX-YBzqz7"
+                      alt="about image 3"
+                    />
+                    <p>
+                      Our company culture emphasizes teamwork, and creativity
+                      and innovation...<a href="#">read more</a>
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div class="col-xs-4-about4">
-                <div class="box">
-                  <img src="images/about4.png" alt="aboutus image 4" />
-                  <p>
-                    We are constantly learning and adapting to stay at the
-                    forefront of our industry...
-                    <a href="#">read more</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="partners">
-              <h3 class="aboutus-partners-heading">Our Trusted Partners</h3>
-              <p class="aboutus-partners-subheading">
-                The future is built together. We believe that change comes with
-                like-minded partners who believe in you and share the same
-                mission.
-              </p>
-              <div class="partners-container">
-                <div class="slider">
-                  <div class="slide-track">
-                    <div class="slide">
-                      <img
-                        href="https://alectio.com/"
-                        src="images/partners1.png"
-                        height="100"
-                        width="250"
-                        alt=""
-                      />
-                    </div>
-                    <div class="slide">
-                      <img
-                        href="https://gust.com/"
-                        src="images/partners2.png"
-                        height="100"
-                        width="250"
-                        alt=""
-                      />
-                    </div>
-                    <div class="slide">
-                      <img
-                        href="https://mdlogix.com/"
-                        src="images/partners3.png"
-                        height="100"
-                        width="250"
-                        alt=""
-                      />
-                    </div>
-                    <div class="slide">
-                      <img
-                        href="https://symbl.ai/"
-                        src="images/partners4.png"
-                        height="100"
-                        width="250"
-                        alt=""
-                      />
-                    </div>
-                    <div class="slide">
-                      <img
-                        href="https://heartbeatai.com/"
-                        src="images/partner5.png"
-                        height="100"
-                        width="250"
-                        alt=""
-                      />
-                    </div>
-                    <div class="slide">
-                      <img
-                        href="https://alectio.com/"
-                        src="images/partners1.png"
-                        height="100"
-                        width="250"
-                        alt=""
-                      />
-                    </div>
-                    <div class="slide">
-                      <img
-                        href="https://gust.com/"
-                        src="images/partners2.png"
-                        height="100"
-                        width="250"
-                        alt=""
-                      />
-                    </div>
-                    <div class="slide">
-                      <img
-                        href="https://mdlogix.com/"
-                        src="images/partners3.png"
-                        height="100"
-                        width="250"
-                        alt=""
-                      />
-                    </div>
-                    <div class="slide">
-                      <img
-                        href="https://symbl.ai/"
-                        src="images/partners4.png"
-                        height="100"
-                        width="250"
-                        alt=""
-                      />
-                    </div>
-                    <div class="slide">
-                      <img
-                        href="https://heartbeatai.com/"
-                        src="images/partner5.png"
-                        height="100"
-                        width="250"
-                        alt=""
-                      />
-                    </div>
+                <div class="col-xs-4-about4">
+                  <div class="box">
+                    <img
+                      src="https://drive.google.com/uc?id=1qOXjn2Ex4zplopYV1DnLbXiRcIsM7Hf_"
+                      alt="about image 4"
+                    />
+                    <p>
+                      We are constantly learning and adapting to stay at the top
+                      and grow our business.
+                      <a href="#">read more</a>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -371,150 +256,79 @@
           </div>
         </section>
 
-        <!--testimonial section-->
+        <!--end of about us section-->
+
+        <!--start of the testimonial section-->
 
         <section id="testimonial">
-          <link
+          <!-- <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
-          />
-
+          /> -->
           <div class="testimonial-container">
-            <div class="heading white-heading">Testimonial</div>
-            <div class="wrapper">
-              <div data-carousel>
-                <ul class="slide__list Wallop-list">
-                  <li class="slide__item Wallop-item Wallop-item--current">
-                    <h2 class="slide__heading">Testimonial 1</h2>
-                    <blockquote>
-                      <p class="slide__quote">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Porttitor rhoncus dolor purus non enim
-                        praesent elementum facilisis. In est ante in nibh mauris
-                        cursus mattis molestie.
-                      </p>
-                      <cite class="slide__cite">AN Author</cite>
-                    </blockquote>
-                  </li>
-                  <li class="slide__item Wallop-item">
-                    <h2 class="slide__heading">Testimonial 2</h2>
-                    <blockquote>
-                      <p class="slide__quote">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua.
-                      </p>
-                      <cite class="slide__cite">AN Author</cite>
-                    </blockquote>
-                  </li>
-                  <li class="slide__item Wallop-item">
-                    <h2 class="slide__heading">Testimonial 3</h2>
-                    <blockquote>
-                      <p class="slide__quote">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Porttitor rhoncus dolor purus non enim
-                        praesent elementum facilisis. In est ante in nibh mauris
-                        cursus mattis molestie.
-                      </p>
-                      <cite class="slide__cite">AN Author</cite>
-                    </blockquote>
-                  </li>
-                  <li class="slide__item Wallop-item">
-                    <h2 class="slide__heading">Testimonial 4</h2>
-                    <blockquote>
-                      <p class="slide__quote">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Porttitor rhoncus dolor purus non enim
-                        praesent elementum facilisis. In est ante in nibh mauris
-                        cursus mattis molestie.
-                      </p>
-                      <cite class="slide__cite">AN Author</cite>
-                    </blockquote>
-                  </li>
-                </ul>
-                <button
-                  class="button--prev Wallop-buttonPrevious"
-                  title="previous"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 27.9 50.2"
+            <div class="testimonial-heading">testimonial</div>
+            <div class="card-column column-0">
+              <div class="card card-color-0">
+                <img
+                  src="https://drive.google.com/uc?export=download&id=10cr9cN0OooM32QcR81R8miAEeoxjpCR2"
+                  alt="Image one"
+                />
+                <h1 class="ts-content">
+                  <a href="https://bit.ly/3IxMArb"
+                    >Conscientiousness is a key performance predictor to look
+                    for when you analyze your-- Cristina Imre</a
                   >
-                    <path
-                      d="M25.1 50.2L0 25.1 25.1 0l2.8 2.8L5.7 25.1l22.2 22.2z"
-                    />
-                  </svg>
-                </button>
-                <button class="button--next Wallop-buttonNext" title="next">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 27.9 50.2"
+                </h1>
+              </div>
+              <div class="card card-color-2">
+                <div class="border"></div>
+                <img
+                  src="https://drive.google.com/uc?export=download&id=1uwNLciyv8GtkgSzWAb1OrV35j_YMZdCA"
+                  alt="Image two"
+                />
+                <h1 class="ts-content">
+                  <a href="https://bit.ly/3BP3VrL"
+                    >How and Why Voice Recognition Technology is the Stepping
+                    Stone of Success --Aldric Chen</a
                   >
-                    <path
-                      d="M25.1 50.2L0 25.1 25.1 0l2.8 2.8L5.7 25.1l22.2 22.2z"
-                    />
-                  </svg>
-                </button>
+                </h1>
               </div>
             </div>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/wallop/2.4.1/js/Wallop.min.js"></script>
-          </div>
-        </section>
-
-        <!--blog section-->
-        <!--https://uiverse.io/Yaya12085/spicy-panther-48-->
-        <section id="blog">
-          <div class="blog">
-            <div class="blogbg">
-              <div class="blog-header"><h1>Blog</h1></div>
-              <div class="blogrow">
-                <div class="hover-cards">
-                  <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <p class="title">stories by our customer</p>
-                        <p>Sep 16,2021</p>
-                      </div>
-                      <div class="flip-card-back">
-                        <p class="title">
-                          Conscientiousness is a key performance predictor to
-                          look for when you analyze your candidates
-                        </p>
-                        <p>Cristina Imre</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="blog-container">
-                  <form class="form">
-                    <span class="title">Subscribe to our newsletter.</span>
-                    <p class="description">
-                      Join the conversation! Share your thoughts and ideas with
-                      our community
-                    </p>
-                    <div>
-                      <input
-                        placeholder="Enter your email"
-                        type="email"
-                        name="email"
-                        id="email-address"
-                      />
-                    </div>
-
-                    <button class="button" style="vertical-align: middle">
-                      <span>subscribe</span>
-                    </button>
-                  </form>
-                </div>
+            <div class="card-column column-1">
+              <div class="card card-color-1">
+                <div class="border"></div>
+                <img
+                  src="https://drive.google.com/uc?export=download&id=13mJjjPbaMr94Hc1I6T1hrrYp7Cucy-Fp"
+                  alt="Image three"
+                />
+                <h1 class="ts-content">
+                  <a href="https://bit.ly/3Wu8Ckn"
+                    >Lies Fascinate Us Even Though the High Value of Life is in
+                    Truth --Aldric Chen</a
+                  >
+                </h1>
+              </div>
+              <div class="card card-color-3">
+                <div class="border"></div>
+                <img
+                  src="https://drive.google.com/uc?export=download&id=1ueLcW-pV-4ukBuyt8qRuvplbXycwyHzo"
+                  alt="Image four"
+                />
+                <h1 class="ts-content">
+                  <a href="https://bit.ly/3OEhEJP"
+                    >Our Evolutionary Need for Cooperation Sets the Stage for
+                    Building Trust in Life --Aldric Chen</a
+                  >
+                </h1>
               </div>
             </div>
           </div>
         </section>
+        <!--end of the testimonial section-->
 
-        <footer id="contactus">
+        <!--start of the contact us page-->
+
+        <section id="contactus">
           <div class="contact us">
             <div class="container">
               <div class="row">
@@ -558,11 +372,13 @@
               </div>
             </div>
           </div>
-        </footer>
+        </section>
+
+        <!--end of the contact us page-->
       </body>
     </html>
     <!-- partial -->
-    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+
     <script src="./script.js"></script>
   </body>
 </html>
